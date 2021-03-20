@@ -33,7 +33,7 @@ class Main extends React.Component{
 
         for(let i=0; i<list.length; i++){
 
-            let url="http://www.omdbapi.com/?i="+list[i]+"&apikey=62a2f146";
+            let url="https://www.omdbapi.com/?i="+list[i]+"&apikey=62a2f146";
 
             let file=new XMLHttpRequest();
             file.open("GET", url, false);
@@ -67,7 +67,7 @@ class Main extends React.Component{
     //Get the nth page of search results from OMDb, update state accordingly, and call the next function to display the results
 
     getData(n){
-        let url="http://www.omdbapi.com/?s="+this.state.search+"&page="+n+"&type=movie&apikey=62a2f146";
+        let url="https://www.omdbapi.com/?s="+this.state.search+"&page="+n+"&type=movie&apikey=62a2f146";
 
         let file=new XMLHttpRequest();
         file.open("GET", url, false);
@@ -143,7 +143,7 @@ class Main extends React.Component{
             infoWindow: "show"
         });
 
-        let url="http://www.omdbapi.com/?i="+id+"&plot=full&apikey=62a2f146";
+        let url="https://www.omdbapi.com/?i="+id+"&plot=full&apikey=62a2f146";
 
         let file=new XMLHttpRequest();
         file.open("GET", url, false);
