@@ -4,7 +4,7 @@ class Main extends React.Component{
     constructor(props){
         super(props);
         this.state={
-            search: "Avengers",         //Search bar input
+            search: "Enter Movie Name",         //Search bar input
             result: "",                 //Search result response text
             infoWindow: "hide",         //Toggle for movie info overlay
             nomins: {                   //Array of nominations' data
